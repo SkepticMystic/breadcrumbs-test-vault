@@ -1,0 +1,1 @@
+up:: [[commands/freeze-crumbs/index]]
