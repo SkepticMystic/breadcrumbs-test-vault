@@ -2,7 +2,7 @@
 
 This vault is used to test [Breadcrumbs](https://github.com/SkepticMystic/breadcrumbs) and its features.
 
-Tests are grouped uinto folder, with all the required notes inside. Generally, the `index.md` note is where you can check if the test is working as expected.
+Tests are grouped into folder, with all the required notes inside. Generally, the `index.md` note is where you can check if the test is working as expected.
 
 ## Setup
 
