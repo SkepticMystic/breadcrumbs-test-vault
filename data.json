@@ -1,0 +1,164 @@
+{
+  "hierarchies": [
+    {
+      "dirs": {
+        "up": ["up"],
+        "same": ["same"],
+        "down": ["down"],
+        "next": ["next"],
+        "prev": ["prev"]
+      },
+      "implied_relationships": {
+        "opposite_direction": true,
+        "self_is_sibling": false,
+        "parents_sibling_is_parent": false,
+        "cousing_is_sibling": false,
+        "same_parent_is_sibling": false,
+        "same_sibling_is_sibling": false,
+        "siblings_parent_is_parent": false
+      }
+    },
+    {
+      "dirs": {
+        "up": ["i-up"],
+        "same": ["i-same"],
+        "down": ["i-down"],
+        "next": ["i-next"],
+        "prev": ["i-prev"]
+      },
+      "implied_relationships": {
+        "opposite_direction": true,
+        "self_is_sibling": true,
+        "parents_sibling_is_parent": true,
+        "cousin_is_sibling": true,
+        "same_parent_is_sibling": true,
+        "same_sibling_is_sibling": true,
+        "siblings_parent_is_parent": true
+      }
+    },
+    {
+      "dirs": {
+        "up": ["↑"],
+        "same": ["↔"],
+        "down": ["↓"],
+        "next": ["→"],
+        "prev": ["←"]
+      },
+      "implied_relationships": {
+        "opposite_direction": true,
+        "self_is_sibling": false,
+        "parents_sibling_is_parent": false,
+        "cousin_is_sibling": false,
+        "same_parent_is_sibling": false,
+        "same_sibling_is_sibling": false,
+        "siblings_parent_is_parent": false
+      }
+    }
+  ],
+  "explicit_edge_sources": {
+    "tag_note": {
+      "default_field": "up"
+    },
+    "list_note": {},
+    "typed_link": {},
+    "dendron_note": {
+      "enabled": true,
+      "delimiter": ".",
+      "default_field": "up",
+      "display_trimmed": false
+    },
+    "date_note": {
+      "enabled": true,
+      "default_field": "→",
+      "date_format": "yyyy-MM-dd 'DN'"
+    }
+  },
+  "views": {
+    "page": {
+      "all": {
+        "readable_line_width": true
+      },
+      "grid": {
+        "enabled": true,
+        "no_path_message": "",
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        }
+      },
+      "prev_next": {
+        "enabled": true,
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        }
+      },
+      "trail": {
+        "enabled": true,
+        "no_path_message": "",
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        },
+        "format": "grid",
+        "default_depth": 2,
+        "default_selection": "all",
+        "selection": "all"
+      }
+    },
+    "side": {
+      "matrix": {
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        }
+      },
+      "tree": {
+        "default_dir": "next",
+        "show_node_options": {
+          "ext": false,
+          "folder": false,
+          "alias": false
+        }
+      }
+    }
+  },
+  "commands": {
+    "list_index": {
+      "default_options": {
+        "dir": "down",
+        "indent": "\\t",
+        "hierarchy_i": -1,
+        "link_kind": "wiki",
+        "show_node_options": {
+          "ext": false,
+          "alias": true,
+          "folder": false
+        }
+      }
+    },
+    "freeze_implied_edges": {
+      "default_options": {
+        "destination": "frontmatter"
+      }
+    },
+    "rebuild_graph": {
+      "trigger": {
+        "note_save": false,
+        "layout_change": false
+      },
+      "notify": true
+    }
+  },
+  "codeblocks": {
+    "show_node_options": {
+      "ext": false,
+      "folder": false,
+      "alias": false
+    }
+  }
+}
