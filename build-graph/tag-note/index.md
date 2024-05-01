@@ -1,7 +1,7 @@
 ---
 BC-tag-note-tag: "#tag-note"
-BC-tag-note-field: right
-BC-tag-note-exact:
+BC-tag-note-field: up
+BC-tag-note-exact: false
 ---
 [[build-graph/tag-note/b]] has `#tag-note`, and [[build-graph/tag-note/c]] has `#tag-note/sub`.
 If using Obsidian files (not Dataview) AND `BC-tag-note-exact` is truthy, then this file should point `up` to only [[build-graph/tag-note/b]].
